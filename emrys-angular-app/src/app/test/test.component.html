@@ -1,9 +1,0 @@
-<p>test works!</p>
-
-<button class = "btn btn-primary"(click)="onClick()">Dispaly Details</button>
-<p *ngIf="display">Secret Password = tuna</p>
-<!-- <p *ngFor="let val of clickVal" [ngStyle]="{backgroundColor:changeBackgroundColor()"
-[ngClass]="{changeColor:checkColor()}"> the value has change {{count}}</p> -->
-
-<p *ngFor="let val of clickVal;let i=index" [ngStyle]="{backgroundColor:i>=4?'blue':'white'}"
- [ngClass]="{changeColor:i>=4}"> the value has change {{val}}</p>
