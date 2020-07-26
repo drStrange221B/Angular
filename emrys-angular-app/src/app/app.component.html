@@ -1,7 +1,8 @@
-<app-header></app-header>
 <div class="container">
-    <div class="row">
-        <app-recipes></app-recipes>
-        <app-shopping-list></app-shopping-list>
-    </div>
+    <app-cockpit
+    (createServer)="onCreateServer($event)"
+    (createBluePrint)="onCreateBluePrint($event)"></app-cockpit>
+    <hr>
+<app-server-element *ngFor="let serverElement of serverElements" [srvElement]="serverElement">
+</app-server-element>
 </div>
