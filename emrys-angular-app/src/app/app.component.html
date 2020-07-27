@@ -1,7 +1,7 @@
 <div class="container">
     <app-cockpit
     (createServer)="onCreateServer($event)"
-    (createBluePrint)="onCreateBluePrint($event)"></app-cockpit>
+    (bpCreated)="onCreateBluePrint($event)"></app-cockpit>
     <hr>
 <app-server-element *ngFor="let serverElement of serverElements" [srvElement]="serverElement">
 </app-server-element>
